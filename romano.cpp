@@ -5,4 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int converte(const char* romano) {
+  return -1;
+}
+
 

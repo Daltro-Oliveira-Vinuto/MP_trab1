@@ -2,4 +2,11 @@
 
 Testes:
 
+teste 1: Tem o objetivo de testar os simbolos basicos I,V,X,L,C,D,M;
+
+
+
+
+
+
 
