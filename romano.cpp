@@ -21,13 +21,27 @@ int converteSimbolo(char c) {
 }
 
 enum boolean validaInput(const char* romano) {
-  int size, i;
+  int size, i, ocorrencias, valorAtual;
   enum boolean garanteInput = TRUE;
 
   size = strlen(romano);
+  ocorrencias = 0;
   for (i=0; i < size && garanteInput == TRUE; i++) {
     if (converteSimbolo(romano[i]) == -1) {
       garanteInput = FALSE;
+    } else {
+      if (ocorrencias == 0) {
+        valorAtual = converteSimbolo(romano[i]);
+        ocorrencias = 1;
+      } else {
+        if (valorAtual == converteSimbolo(romano[i])) {
+          ocorrencias++;
+          if (ocorrencias > 3)  garanteInput = FALSE;
+        } else {
+          ocorrencias = 1;
+          valorAtual = converteSimbolo(romano[i]);
+        }
+      }
     }
   }
   return garanteInput;

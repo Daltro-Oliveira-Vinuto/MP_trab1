@@ -6,7 +6,10 @@ teste 1: Tem o objetivo de testar os simbolos basicos I,V,X,L,C,D,M;
 teste 1: -> all tests passed;
 
 teste 2: Verifica se a entrada é invalida observando se existem outros simbolos alem dos romanos;
-teste 2: 
+teste 2: -> all tests passed;
+
+test 3: Verifica se a entrada é invalida observando se existem mais de tres símbolos validos seguidos;
+teste 3:
 
 
 

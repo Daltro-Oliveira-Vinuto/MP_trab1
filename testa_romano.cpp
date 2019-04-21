@@ -21,3 +21,10 @@ TEST_CASE("testaSimbolosInvalidos", "testaConversaoInvalida") {
   REQUIRE(converte("3") == -1);
 }
 
+// teste 3
+TEST_CASE("entradaComMaisDe3SimbolosRepetidos", "testaConversaoInvalida") {
+  REQUIRE(converte("IIII") == -1);
+  REQUIRE(converte("XXXXX") == -1);
+  REQUIRE(converte("CCCCCC") == -1);
+}
+
