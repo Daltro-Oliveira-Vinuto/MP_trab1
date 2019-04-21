@@ -1,0 +1,13 @@
+// Copyright 2019 Daltro Oliveira Vinuto
+
+Instruções:
+
+  Para compilar, digite: make all
+  Para executar o programa juntamente com o Valgrind, digite: make run
+  Para ver o relatorio do Valgrind, abra: valgrind_out.txt
+
+  Obs.: make all, além de compilar ira executar as checagens do
+  cppcheck, cpplint e mostrar os resultados dos testes pelo catch.
+  Obs.: É necessario ter instalado o catch, o cppcheck e o cpplint no 
+  computador.
+
