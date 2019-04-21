@@ -5,6 +5,11 @@
 
 #define MAX 50
 
+enum boolean {
+  TRUE = 1,
+  FALSE = 0,
+};
+
 int converte(const char* romano);
 
 

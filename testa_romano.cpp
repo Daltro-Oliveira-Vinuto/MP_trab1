@@ -13,3 +13,11 @@ TEST_CASE("testaSimbolosBasicos", "testaConversao") {
   REQUIRE(converte("D") == 500);
   REQUIRE(converte("M") == 1000);
 }
+
+// teste 2
+TEST_CASE("testaSimbolosInvalidos", "testaConversaoInvalida") {
+  REQUIRE(converte("z") == -1);
+  REQUIRE(converte("a") == -1);
+  REQUIRE(converte("3") == -1);
+}
+

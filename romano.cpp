@@ -20,8 +20,28 @@ int converteSimbolo(char c) {
   return valor;
 }
 
+enum boolean validaInput(const char* romano) {
+  int size, i;
+  enum boolean garanteInput = TRUE;
+
+  size = strlen(romano);
+  for (i=0; i < size && garanteInput == TRUE; i++) {
+    if (converteSimbolo(romano[i]) == -1) {
+      garanteInput = FALSE;
+    }
+  }
+  return garanteInput;
+}
+
 int converte(const char* romano) {
-  return converteSimbolo(romano[0]);
+  int valorFinal;
+
+  if (validaInput(romano) == FALSE) {
+    valorFinal = -1;
+  } else {
+    valorFinal = converteSimbolo(romano[0]);
+  }
+  return valorFinal;
 }
 
 
