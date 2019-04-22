@@ -11,9 +11,11 @@ teste 2: -> all tests passed;
 test 3: Verifica se a entrada é invalida observando se existem mais de tres símbolos validos seguidos;
 teste 3:  -> all tests passed;
 
-teste 4: Verifica se retorna a entrada valida para numeros romanos ate 100;
+teste 4: Verifica se retorna a saida correta para numeros romanos ate 100;
 teste 4:  -> all tests passed;
 
+teste 5: Verifica se retorna a saida correta para alguns simbolos romanos de 100 a 3000;
+teste 5:  -> all tests passed;
 
 
 

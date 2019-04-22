@@ -47,3 +47,11 @@ TEST_CASE("algunsNumerosRomanosAte100", "testaConversao") {
   REQUIRE(converte("XCIX") == 99);
 }
 
+// teste 5
+TEST_CASE("algunsNumerosRomanosde100a3000", "testaConversao") {
+  REQUIRE(converte("CDXLVIII") == 448);
+  REQUIRE(converte("MDCCIV") == 1704);
+  REQUIRE(converte("MMDCCCVI") == 2806);
+  REQUIRE(converte("MMM") == 3000);
+}
+

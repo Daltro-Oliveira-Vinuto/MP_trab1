@@ -3,7 +3,7 @@ CFLAGS = -g -Wall  -std=c++11
 SOURCES = 	main.cpp romano.cpp romano.hpp testa_romano.cpp
 CHECKFLAGS = --enable=warning 
 
-all: romano cppcheck cpplint catch run_test 
+all: romano cppcheck cpplint catch run_test
 
 romano: romano.cpp main.cpp
 	$(CC) $(CFLAGS) romano.cpp main.cpp -o romano.exe
