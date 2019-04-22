@@ -28,3 +28,22 @@ TEST_CASE("entradaComMaisDe3SimbolosRepetidos", "testaConversaoInvalida") {
   REQUIRE(converte("CCCCCC") == -1);
 }
 
+// teste 4
+TEST_CASE("algunsNumerosRomanosAte100", "testaConversao") {
+  REQUIRE(converte("III") == 3);
+  REQUIRE(converte("IV") == 4);
+  REQUIRE(converte("VIII") == 8);
+  REQUIRE(converte("IX") == 9);
+  REQUIRE(converte("XV") == 15);
+  REQUIRE(converte("XIV") == 14);
+  REQUIRE(converte("XVIII") == 18);
+  REQUIRE(converte("XIX") == 19);
+  REQUIRE(converte("XXXIV") == 34);
+  REQUIRE(converte("XXXVIII") == 38);
+  REQUIRE(converte("XLIV") == 44);
+  REQUIRE(converte("XLVIII") == 48);
+  REQUIRE(converte("XCIV") == 94);
+  REQUIRE(converte("XCVII") == 97);
+  REQUIRE(converte("XCIX") == 99);
+}
+

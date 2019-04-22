@@ -26,7 +26,7 @@ int main(void) {
     }
   }while(strcmp(algarismo, "-1") != 0);
 
-  printf("Programa finalido!\n\n");
+  printf("Programa finalizado!\n\n");
 
   return 0;
 }
