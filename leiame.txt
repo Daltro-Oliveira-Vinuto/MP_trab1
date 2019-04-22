@@ -15,5 +15,6 @@ Instruções:
   computador.
   3. Use o compilador g++ 7.3.0; 
   4. Use o SO Linux;
+  5. Foi utilizado o gdb para depurar o codigo;
 
 
